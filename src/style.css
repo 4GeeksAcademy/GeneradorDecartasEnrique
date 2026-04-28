@@ -1,5 +1,75 @@
-@import "bootstrap/dist/css/bootstrap.min.css";
+body {
+  background: lab(46.23% -51.7 49.9);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  display: flex;             
+  flex-direction: column;   
+  height: 100vh;            
 
-body{
-    background: white;
 }
+
+.card {
+  width: 450px;
+  height:650px;
+  background: white;
+  border-radius: 5px;
+  position: relative;
+  font-family: 'UnifrakturCook', cursive;
+  box-shadow: 0 4px 10px black;
+  outline: 1px solid #150101;  
+  outline-offset: -15px;  
+}
+
+.arribasimbolo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 60px;
+}
+
+.valorcentral {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 200px;
+  font-weight: bold;
+}
+
+.abajosimbolo {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-size: 60px;
+  transform: rotate(180deg);
+}
+
+#btn-nueva-carta {
+  margin-top: 30px; 
+  padding: 15px 40px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  background: linear-gradient(45deg, #d63031, #8b0000); 
+  border: none;
+  border-radius: 50px; 
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(214, 48, 49, 0.4);
+  transition: all 0.3s ease;
+}
+
+
+.heart,
+.diamond {
+  color: red;
+}
+
+.spade,
+.club {
+  color: black;
+}
+
